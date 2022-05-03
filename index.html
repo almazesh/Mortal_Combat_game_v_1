@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fight Game</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    body{
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div style="position:relative;display: inline-block;">
+    <div style="position: absolute;display: flex;width: 100%;align-items: center;padding: 0 20px 0 0 ;">
+      <!-- Player -->
+      <div style="position: relative;height: 30px;width: 100%;display: flex; justify-content: flex-end;">
+        <div style="background-color: yellow;height: 30px;" ></div>
+        <div style="position:absolute;top:0;right: 0;bottom: 0;background-color: blue;width: 100%;" id="playerHealth"></div>
+      </div>
+      <!-- Timer -->
+      <div style="background-color: red;height: 100px;width: 100px;flex-shrink: 0;display: flex;justify-content: center;align-items: center ;color: white; font-size: 40px;" id="timer">
+        59
+      </div>
+      <!-- Enemy -->
+      <div style="position: relative;height: 30px;width: 100%;display: flex; justify-content: flex-end;">
+        <div style="background-color: yellow;height: 30px;" ></div>
+        <div style="position:absolute;top:0;right: 0;left: 0;bottom: 0;background-color: blue;" id="enemyHealth"></div>
+      </div>
+    </div>
+    <div style="position: absolute;display: none;justify-content: center;align-items: center;color: white;left: 0;top: 0;right:0;bottom: 0;font-size: 30px;" class="result">Tie</div>
+    <canvas ></canvas>
+  </div>
+  <script src="js/utils.js"></script>
+  <script src="js/classes.js"></script>
+  <script src="canvas.js"></script>
+
+</body>
+</html>
